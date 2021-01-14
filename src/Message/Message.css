@@ -1,0 +1,72 @@
+.message {
+    width: fit-content;
+    max-width: 70%;
+}
+
+.message:not(:first-child) {
+    margin-top: 15px;
+}
+
+.message--others + .message--user {
+    margin-top: 15px !important;
+}
+
+.message--user {
+    margin-top: 3px !important;
+    margin-left: auto;
+}
+
+.message--inner {
+    margin-top: 3px !important;
+}
+
+.message--outer_bottom {
+    margin-top: 3px !important;
+}
+
+.message .message__text {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+    background-color: #E4E6EB;
+    color: #050505;
+    min-width: 50px;
+    border-radius: 50px;
+}
+
+.message--user .message__text {
+    background-color: #0099FF !important;
+    color: #fff;
+}
+
+.message--user.message--outer_top .message__text {
+    border-radius: 50px 45px 5px 50px;
+}
+
+.message--user.message--inner .message__text {
+    border-radius: 50px 5px 5px 50px;
+}
+
+.message--user.message--outer_bottom .message__text {
+    border-radius: 50px 5px 45px 50px;
+}
+
+.message--inner .message__text {
+    border-radius: 5px 50px 50px 5px;
+}
+
+.message--outer_top .message__text {
+    border-radius: 45px 50px 50px 5px;
+}
+
+.message--outer_bottom .message__text {
+    border-radius: 5px 50px 50px 45px;
+}
+
+.message__user {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 3px;
+    text-align: left;
+    color: #8a8d91;
+}
